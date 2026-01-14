@@ -1,0 +1,25 @@
+@import "./vars.css";
+@import "./style.css";
+
+.pc-landing-page {
+  background-image: url("../img/pc-main-bg.png");
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.pc-landing-page-content {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end; /* по вертикали низ */
+  padding-bottom: 120px;
+  align-items: flex-start;
+  row-gap: 4px;
+  text-align: left;
+}
+.pc-features-block {
+  padding-block: 120px;
+}

@@ -1,0 +1,18 @@
+:root {
+  --text-white-1: #fff;
+  --text-white-2: #ccd0d8;
+  --text-grey-1: #888b97;
+  --text-grey-2: #5f6270;
+  --text-brand-blue: #6a9ab6;
+  --button-brand-blue: #436f89;
+  --bg-dark-3: #212a33;
+  --bg-dark-2: #1d1d21;
+  --bg-dark-1: #141418;
+  --border-shadow: 0 10px 34px rgba(7, 7, 7, 0.2);
+  --container-max: 1200px;
+  --bg-dark-transparent: rgb(20, 20, 24, 0.8);
+}
+.container {
+  padding-inline: max(calc(50% - var(--container-max) / 2), 20px);
+  width: 100%;
+}

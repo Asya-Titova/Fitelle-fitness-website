@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Urbanist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./index.js" defer></script>
+    <title>Fitelle – Premium Fitness</title>
+  </head>
+  <body>
+    <!-- FORM -->
+    <div class="overlay-form container">
+      <div class="modal">
+        <div class="exit-icon">
+          <img src="./img/close-circle.svg" alt="" width="32" height="32" />
+        </div>
+
+        <div class="form-content">
+          <img class="form-img" src="./img/gym-equipment.jpg" alt="" />
+          <div class="form-text">
+            <div>
+              <div class="form-title">
+                <h3>Join us today</h3>
+                <p>
+                  Enter your contact details<br />
+                  and we`ll contact you shortly
+                </p>
+              </div>
+              <div class="inputs">
+                <input class="input-name" placeholder="Name" />
+                <div class="input-phone">
+                  <span>+1 </span>
+                  <input class="input-phone-field" placeholder="999 999 9999" />
+                </div>
+              </div>
+            </div>
+            <div class="submit">
+              <p class="privacy-policy">
+                By clicking SUBMIT, I agree to the Fitelle
+                <a>Terms & Conditions</a>, <a>Privacy Policy</a>.
+              </p>
+              <button class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <!--Full Logo-->
+      <div class="logo">
+        <div class="logo-company">
+          <img
+            class="logo-icon"
+            src="./img/Logo.svg"
+            alt="Fitelle logo"
+            width="27"
+            height="26"
+          />
+          <span class="name-company">Fitelle</span>
+        </div>
+        <div class="logo-company-description">premium fitness space</div>
+      </div>
+
+      <!--navbar-->
+      <nav class="nav">
+        <div>
+          <a href="index.html#home">Home</a>
+          <a href="index.html#features">About</a>
+          <a href="personal-coaching.html">Personal Coaching</a>
+          <a href="index.html#price">Membership</a>
+        </div>
+      </nav>
+
+      <button class="order-call-btn">Order a Call</button>
+    </header>
+    <section class="landing-page">
+      <div id="home" class="landing-page-content container">
+        <h1>wellness<br />innovation</h1>
+        <div>Personalized workout routines for your well-being</div>
+        <div class="main-page-buttons">
+          <button class="more-info-btn">Learn More</button>
+          <button class="cta-btn join-us-btn">Join Us Today</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="features" class="awards-section container">
+      <div class="awards-title">Proven leadership in fitness</div>
+      <div class="awards-logos">
+        <img
+          class="award-icon"
+          src="img/npc-award-logo.svg"
+          alt="npc-logo-award"
+        />
+        <img
+          class="award-icon"
+          src="img/russian-fitness-logo.svg"
+          alt="russian-fitness-logo-award"
+        />
+        <img
+          class="award-icon"
+          src="img/olimpia-logo.svg"
+          alt="olimpia-logo-award"
+        />
+        <img
+          class="award-icon"
+          src="img/arnold-sports-logo.svg"
+          alt="arnold-sports-logo-award"
+        />
+        <img
+          class="award-icon"
+          src="img/national-design-logo.svg"
+          alt="national-design-logo-award"
+        />
+      </div>
+    </section>
+    <!-- CLUB INFO -->
+    <section class="goal-and-rating container">
+      <h3>premium fitness space</h3>
+      <div class="club-info">
+        <div>
+          <p>
+            Fitelle Club delivers elite, personalized training designed around
+            you — elevating your performance<br />with targeted coaching
+          </p>
+        </div>
+        <div>
+          <h4>location</h4>
+          <p>3458 North Ridge Avenue №502, Chicago, IL 60657</p>
+        </div>
+        <div>
+          <h4>working hours</h4>
+          <p>Monday - Sunday: 6:00 - 23:30</p>
+        </div>
+      </div>
+      <h4 class="rating">
+        Trusted by 16,000+ customers and 3,000+ five-star<br />reviews at a 4.9
+        rating
+      </h4>
+    </section>
+    <!-- CLUB FEATURES -->
+    <section class="club-features container">
+      <div class="title-and-column">
+        <h3>next level of wellness</h3>
+        <div class="transform-elevate-column">
+          <div class="transform column">
+            <h4>Transform</h4>
+            <p>
+              We guide you toward a body and lifestyle transformation that
+              elevates quality of life
+            </p>
+          </div>
+          <div class="elevate column">
+            <h4>Elevate</h4>
+            <p>
+              We elevate your performance and presence through precision
+              training that redefines your standard of strength, vitality, and
+              aesthetic excellence
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="img-woman-lying"
+            src="img/woman-lying.jpg"
+            alt="woman-lying"
+          />
+        </div>
+      </div>
+      <div>
+        <img
+          class="img-woman-standing"
+          src="img/woman-standing.jpg"
+          alt="woman-standing"
+        />
+        <h4>Empower</h4>
+        <p>We unlock your inner strength, building confidence and resilience</p>
+      </div>
+    </section>
+    <!-- PERSONAL COACHING preview-->
+    <section id="coaching" class="personal-coaching-preview">
+      <div class="personal-coaching container">
+        <h2>personal</h2>
+        <h2>coaching</h2>
+
+        <div>Premium amenities & expert trainers</div>
+      </div>
+    </section>
+    <!-- PERSONAL COACHING-->
+    <section class="personal-coaching-features container">
+      <!-- First block-->
+      <div class="pc-features-block">
+        <!-- large-img line -->
+        <div class="pc-block-line">
+          <div>
+            <h4>Elite Coaches with Proven Expertise</h4>
+            <p>
+              Each instructor holds top-level credentials (NASM, CSCS, FRC) and
+              many have worked with professional athletes, executives, and
+              performers preparing highly-demanding physical roles.
+            </p>
+          </div>
+          <img
+            class="personal-coaching-img-large"
+            src="img/pc-woman-sitting.jpg"
+            alt="Elite coach demonstrating proper form"
+          />
+        </div>
+
+        <!-- small-img line -->
+        <div class="pc-block-line">
+          <img
+            class="personal-coaching-img-small"
+            src="img/gym-equipment.jpg"
+            alt="Elite gym equipment setup"
+          />
+
+          <div>
+            <h4>Precision Equipment, Maximum Efficiency</h4>
+            <div class="pc-feature-double">
+              <p class="personal-coaching-text">
+                Our gym features elite-level equipment — smart resistance
+                systems, AI-guided cardio, and precision recovery tools.
+              </p>
+              <p class="personal-coaching-text">
+                This high-tech environment ensures safe, efficient workouts
+                tailored to your goals, maximizing results every session.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COACHES -->
+    <section class="coaches">
+      <div class="coaches-content container">
+        <h3>experienced professionals</h3>
+
+        <div class="coaches-row">
+          <div class="gradient-card">
+            <h4>
+              Each trainer holds top-level credentials<br />(NASM, CSCS, FRC)
+            </h4>
+
+            <a href="personal-coaching.html" class="more-info-btn">
+              More info
+            </a>
+          </div>
+
+          <div class="coach-cards-list">
+            <article class="coach-card">
+              <img class="coach-photo" src="./img/trainer1.png" alt="trainer" />
+              <div>
+                <h4>Anna</h4>
+                <div class="coach-specialization">body instructor</div>
+              </div>
+              <div class="coach-tags">
+                <div class="tag">running</div>
+                <div class="tag">loosing weight</div>
+                <div class="tag">pilates</div>
+              </div>
+            </article>
+
+            <article class="coach-card">
+              <img class="coach-photo" src="./img/trainer2.png" alt="trainer" />
+              <div>
+                <h4>Michel</h4>
+                <div class="coach-specialization">health instructor</div>
+              </div>
+              <div class="coach-tags">
+                <div class="tag">recovery</div>
+                <div class="tag">aerobics</div>
+                <div class="tag">streching</div>
+              </div>
+            </article>
+
+            <article class="coach-card">
+              <img class="coach-photo" src="./img/trainer3.png" alt="trainer" />
+              <div>
+                <h4>Rachel</h4>
+                <div class="coach-specialization">sport coach</div>
+              </div>
+              <div class="coach-tags">
+                <div class="tag">pilates</div>
+                <div class="tag">flexibility</div>
+                <div class="tag">gymnastics</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRICING CARDS -->
+    <section id="price" class="pricing container">
+      <h3>pricing – membership & training packages</h3>
+
+      <div class="price-cards-list">
+        <!-- Basic -->
+        <div class="price-card">
+          <div class="tariff-details">
+            <div class="tariff-name">Basic</div>
+            <div class="price-details">
+              <div class="price">$175</div>
+              <div class="payment-period">/ month</div>
+            </div>
+          </div>
+
+          <ul class="tariff-features-list">
+            <li>
+              <img class="feature-icon" src="./img/check-circle.svg" alt="" />
+              <p>2 Personal Training Sessions for 60 Minutes</p>
+            </li>
+            <li class="is-disabled">
+              <img class="feature-icon" src="./img/close-circle.svg" alt="" />
+              <p>Personalized Progress Plan</p>
+            </li>
+            <li class="is-disabled">
+              <img class="feature-icon" src="./img/close-circle.svg" alt="" />
+              <p>Ongoing Messaging Support with Trainer</p>
+            </li>
+          </ul>
+
+          <button class="pay-button pay-button--outline">Get Started</button>
+        </div>
+
+        <!-- Premium (accent) -->
+        <div class="price-card price-card--accent">
+          <!--модификатор для класса -->
+          <div class="tariff-details">
+            <div class="tariff-name tariff-name--accent">Premium</div>
+
+            <div class="price-details">
+              <div class="price">$500</div>
+              <div class="payment-period">/ month</div>
+            </div>
+          </div>
+
+          <ul class="tariff-features-list">
+            <li>
+              <img class="feature-icon" src="./img/check-circle.svg" alt="" />
+              <p>10 Personal Training Sessions<br />for 60 Minutes</p>
+            </li>
+            <li>
+              <img class="feature-icon" src="./img/check-circle.svg" alt="" />
+              <p>Personalized Progress Plan</p>
+            </li>
+            <li>
+              <img class="feature-icon" src="./img/check-circle.svg" alt="" />
+              <p>Ongoing Messaging Support<br />with Trainer</p>
+            </li>
+            <li class="is-bonus">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="13"
+                  r="9"
+                  stroke="#6A9AB6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15 11L11 15L9 13"
+                  stroke="#6A9AB6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p>Bonus: free SPA at any time</p>
+            </li>
+          </ul>
+
+          <button class="pay-button pay-button--solid">Get Started</button>
+        </div>
+
+        <!-- Standard -->
+        <div class="price-card">
+          <div class="tariff-details">
+            <div class="tariff-name">Standard</div>
+
+            <div class="price-details">
+              <div class="price">$350</div>
+              <div class="payment-period">/ month</div>
+            </div>
+          </div>
+
+          <ul class="tariff-features-list">
+            <li>
+              <img class="feature-icon" src="./img/check-circle.svg" alt="" />
+              <p>5 Personal Training Sessions<br />for 60 Minutes</p>
+            </li>
+            <li>
+              <img class="feature-icon" src="./img/check-circle.svg" alt="" />
+              <p>Personalized Progress Plan</p>
+            </li>
+            <li class="is-disabled">
+              <img class="feature-icon" src="./img/close-circle.svg" alt="" />
+              <p>Ongoing Messaging Support<br />with Trainer</p>
+            </li>
+          </ul>
+
+          <button class="pay-button pay-button--outline">Get Started</button>
+        </div>
+      </div>
+    </section>
+    <section class="footer-preview">
+      <div class="footer-preview-content container">
+        <div class="left-focus-text">
+          <div class="f-text">
+            <img
+              class="F-symbol"
+              src="img/Logo.svg"
+              alt="F-symbol"
+              height="57"
+              width="61"
+            />
+            <h4>ocus on what matters:</h4>
+          </div>
+        </div>
+
+        <div class="right-text">
+          <div class="group-text">
+            <h2>edge</h2>
+            <h2>health</h2>
+            <h2>growth</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content container">
+        <div class="flex-group">
+          <div class="full-logo-and-social-media">
+            <!--Logo + name + subtext-->
+
+            <img src="./img/full-logo.svg" alt="Fitelle logo" />
+
+            <!-- SVG SOCIAL MEDIA ICONS -->
+            <div class="social-media">
+              <a class="facebook icon" href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip2)">
+                    <path
+                      d="M32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 23.9859 5.85094 30.6053 13.5 31.8056V20.625H9.4375V16H13.5V12.475C13.5 8.465 15.8888 6.25 19.5434 6.25C21.2934 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1075C19.12 10.5 18.5 11.7334 18.5 13V16H22.9375L22.2281 20.625H18.5V31.8056C26.1491 30.6053 32 23.9859 32 16Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M22.2281 20.625L22.9375 16H18.5V13C18.5 11.7347 19.12 10.5 21.1075 10.5H23.125V6.5625C23.125 6.5625 21.2941 6.25 19.5434 6.25C15.8888 6.25 13.5 8.465 13.5 12.475V16H9.4375V20.625H13.5V31.8056C15.1566 32.0648 16.8434 32.0648 18.5 31.8056V20.625H22.2281Z"
+                      fill="#212A33"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip2">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+
+              <a class="tg icon" href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.4482 20.978C9.7862 19.6902 12.396 18.6153 14.8345 17.535C19.0297 15.7655 23.2415 14.0266 27.4959 12.4078C28.3236 12.132 29.8109 11.8623 29.9567 13.0889C29.8768 14.8252 29.5483 16.5514 29.323 18.2776C28.7511 22.0736 28.0901 25.8566 27.4455 29.6401C27.2234 30.9004 25.6447 31.5527 24.6345 30.7462C22.2068 29.1064 19.7605 27.4825 17.3638 25.8047C16.5788 25.007 17.3068 23.8614 18.0079 23.2917C20.0074 21.3212 22.1279 19.647 24.0229 17.5747C24.5341 16.3404 23.0237 17.3806 22.5256 17.6994C19.7882 19.5857 17.1179 21.5872 14.2319 23.2451C12.7577 24.0565 11.0396 23.3631 9.56606 22.9103C8.24491 22.3633 6.3089 21.8121 7.44806 20.9781L7.4482 20.978Z"
+                    fill="#212A33"
+                  />
+                </svg>
+              </a>
+
+              <a class="inst icon" href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="32" height="32" rx="16" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.47208 9.09442C5.81812 10.3779 5.81812 12.058 5.81812 15.4184V16.2184C5.81812 19.5787 5.81812 21.2588 6.47208 22.5423C7.04732 23.6713 7.9652 24.5892 9.09417 25.1644C10.3776 25.8184 12.0578 25.8184 15.4181 25.8184H16.2181C19.5784 25.8184 21.2586 25.8184 22.5421 25.1644C23.671 24.5892 24.5889 23.6713 25.1642 22.5423C25.8181 21.2588 25.8181 19.5787 25.8181 16.2184V15.4184C25.8181 12.058 25.8181 10.3779 25.1642 9.09442C24.5889 7.96544 23.671 7.04756 22.5421 6.47232C21.2586 5.81836 19.5784 5.81836 16.2181 5.81836H15.4181C12.0578 5.81836 10.3776 5.81836 9.09417 6.47232C7.9652 7.04756 7.04732 7.96544 6.47208 9.09442ZM22.8181 10.3184C22.8181 11.1468 22.1465 11.8184 21.3181 11.8184C20.4897 11.8184 19.8181 11.1468 19.8181 10.3184C19.8181 9.48993 20.4897 8.81836 21.3181 8.81836C22.1465 8.81836 22.8181 9.48993 22.8181 10.3184ZM15.8181 20.8184C18.5795 20.8184 20.8181 18.5798 20.8181 15.8184C20.8181 13.0569 18.5795 10.8184 15.8181 10.8184C13.0567 10.8184 10.8181 13.0569 10.8181 15.8184C10.8181 18.5798 13.0567 20.8184 15.8181 20.8184Z"
+                    fill="#212A33"
+                  />
+                  <path
+                    d="M18.8181 15.8184C18.8181 17.4752 17.475 18.8184 15.8181 18.8184C14.1613 18.8184 12.8181 17.4752 12.8181 15.8184C12.8181 14.1615 14.1613 12.8184 15.8181 12.8184C17.475 12.8184 18.8181 14.1615 18.8181 15.8184Z"
+                    fill="#212A33"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-columns">
+            <div>
+              <div class="footer-column-title">Company</div>
+              <div class="footer-column-list">
+                <ul>
+                  <li><a href="#features">About Us</a></li>
+                  <li>
+                    <a href="personal-coaching.html">Personal Coaching</a>
+                  </li>
+                  <li><a href="#price">Membership</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="footer-column-title">Help</div>
+              <div class="footer-column-list">
+                <ul>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">SEO</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright container">
+          <div class="line-divider"></div>
+          <div>
+            Copyright&copy <span class="year"></span> Fitelle, all rights
+            reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,782 @@
+@import "./vars.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px; /*размер самого маленького шрифта*/
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  background-color: var(--bg-dark-1);
+  color: var(--text-white-1);
+}
+input {
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0px;
+}
+
+h1 {
+  line-height: 0.8;
+  font-size: 76px;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-size: 66px;
+  letter-spacing: -1.5px;
+  line-height: 0.85;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-size: 42px;
+}
+h4 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-white-1);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-brand-blue);
+}
+a:active {
+  transform: scale(0.98) translateY(0.5px);
+}
+
+button {
+  border: none;
+  color: inherit;
+  padding: 18px 20px;
+  border-radius: 18px;
+  font: inherit;
+  cursor: pointer;
+  transform: translateZ(0) scale(1);
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), color 0.2s,
+    background-color 0.2s, border-color 0.2s;
+
+  touch-action: manipulation; /* убирает 200ms задержку на iOS/Android
+предотвращает случайные жесты типа увеличения или перемещения страницы */
+  will-change: transform; /*Подсказка браузеру: какие свойства элемента 
+   будут анимироваться в будущем. */
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98) translateY(0.5px);
+}
+
+/* ALL BUTTONs STATES */
+.order-call-btn:hover {
+  border-color: var(--text-brand-blue);
+  color: var(--text-brand-blue);
+}
+
+.more-info-btn:hover {
+  border-color: var(--bg-dark-1);
+  color: var(--bg-dark-1);
+}
+
+.cta-btn:hover {
+  background-color: var(--bg-dark-3);
+}
+
+.pay-button:hover {
+  border-color: var(--text-brand-blue);
+  color: var(--text-brand-blue);
+}
+
+.pay-button--solid:hover {
+  color: var(--text-white-1);
+}
+/* social-media icons */
+.icon:hover {
+  transform: translateY(0.5px);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Stacks above other content */
+  /* Add other styles like background-color, height, etc. */
+}
+
+/* LANDING */
+.landing-page {
+  background-image: url("../img/main-page-cover.png");
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.site-header {
+  width: 100%;
+  height: 68px;
+  display: flex; /* ставим элементы в одну строку */
+  justify-content: space-between; /* одинаковое расстояние м\ду лого, навигацией и кнопкой */
+  align-items: center; /* выравниваем по вертикали по центру */
+  padding-inline: max(
+    calc(50% - var(--container-max) / 2),
+    20px
+  ); /* ↓ 600px — половина от 1200px */
+  background-color: var(--bg-dark-1);
+  margin: 0 auto; /* центрируем этот блок внутри 1920 */
+  font-size: 18px;
+}
+
+/*LOGO*/
+.logo {
+  display: block;
+}
+.logo-company {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.name-company {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: normal;
+}
+.logo-company-description {
+  font-size: 14px;
+  color: var(--text-white-2);
+  line-height: 1;
+  letter-spacing: 0.7px;
+  margin: 0;
+}
+
+/* NAV */
+
+.nav div {
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  padding: 10px 20px;
+}
+
+/* BUTTON-HEADER */
+.order-call-btn {
+  background-color: transparent;
+  padding: 10px 14px;
+  border: 1px solid var(--text-white-1);
+  border-radius: 12px;
+}
+
+.landing-page-content {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* по вертикали центр */
+  align-items: flex-end;
+  row-gap: 4px;
+  text-align: right;
+}
+
+.main-page-buttons {
+  margin-top: 26px;
+  display: flex; /* элементы в одну строку */
+  gap: 20px;
+}
+
+.more-info-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px 20px;
+  border-radius: 18px;
+  border: 1px solid var(--text-white-1);
+
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-btn {
+  background-color: var(--bg-dark-1);
+}
+
+/* FORM */
+.overlay-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--bg-dark-transparent);
+}
+.is-open {
+  display: block;
+}
+.modal {
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 90px;
+  position: relative;
+  max-width: 980px;
+  border-radius: 30px;
+  border: 1px solid var(--text-white-1);
+  padding: 50px;
+  background-color: var(--bg-dark-1);
+}
+.exit-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.form-content {
+  display: grid;
+  grid-template-columns: 540px 1fr; /* match mockup image width */
+  gap: 30px;
+  width: 100%;
+}
+.form-text {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-title h3 {
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+.input-name {
+  color: var(--text-grey-1);
+  background-color: transparent;
+  display: flex;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--text-white-1);
+  gap: 14px;
+}
+.input-phone {
+  display: flex;
+  padding: 10px 14px;
+  gap: 14px;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--text-white-1);
+}
+.input-name,
+.input-phone input {
+  color: var(--text-white-1);
+}
+
+.input-phone input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.submit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.privacy-policy {
+  color: var(--text-grey-1);
+  font-size: 14px;
+}
+.submit-btn {
+  background-color: transparent;
+  border: 1px solid var(--text-white-1);
+}
+.form-img {
+  width: 100%;
+  height: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+/* AWARDS */
+.awards-section {
+  padding-block: 40px;
+}
+
+.awards-title {
+  color: var(--text-grey-1);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.awards-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.awards-logos img:first-child {
+  margin-top: -27px; /* вытащили за контейнер */
+}
+
+/* ---- О ЦЕНТРЕ ---- */
+.goal-and-rating {
+  background-color: var(--bg-dark-2);
+  padding-block: 50px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.goal-and-rating p {
+  color: var(--text-white-2);
+}
+/* ---- КОНТЕЙНЕР из ТРЁХ КОЛОНОК ---- */
+.club-info {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 24px;
+}
+.club-info div {
+  width: 375px;
+}
+.club-info div h4 {
+  margin-bottom: 16px;
+}
+
+.rating {
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* БЛОК ПРЕИМУЩЕСТВА NEXT LEVEL OF FITNESS*/
+.club-features {
+  padding-block: 120px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  justify-content: space-between;
+  gap: 20px; /*расстояние между колонкой с картинкой справа 
+  и блоком (из 2 подколонок) слева*/
+}
+.club-features p {
+  color: var(--text-white-2);
+}
+.transform-elevate-column {
+  display: flex;
+  flex-direction: column;
+}
+.club-features h3 {
+  margin-bottom: 30px; /*отсуп от  next level of fitness */
+}
+.club-features h4 {
+  color: var(--text-brand-blue);
+  margin-bottom: 16px; /* расстояние между h4 и текстом */
+}
+.title-and-column {
+  display: flex;
+  flex-direction: column;
+}
+.column {
+  width: 375px;
+}
+.elevate {
+  /* align-self: flex-end; */
+  margin-left: auto;
+}
+.img-woman-standing {
+  width: 400px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  margin-bottom: 30px; /*отсуп от картинки к h4 */
+}
+.img-woman-lying {
+  width: 375px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/*PESONAL TRAINING PAGE*/
+.personal-coaching-preview {
+  background-image: url("../img/cover-coaching-page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  width: 100%;
+  display: flex;
+  align-items: center; /* вертикальная центровка содержимого */
+}
+.personal-coaching-features {
+  padding-block: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pc-features-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pc-block-line {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pc-block-line p {
+  max-width: 375px; /*  Won't exceed this, but shrinks on smaller screens */
+  width: 100%; /*  Takes available space */
+  color: var(--text-white-2);
+}
+.pc-block-line h4 {
+  margin-bottom: 20px;
+}
+.pc-feature-double {
+  display: flex;
+  gap: 24px;
+}
+.personal-coaching-img-large {
+  max-width: 800px; /*  Doesn't exceed desktop size */
+  width: 100%; /*  Responsive on tablets/mobile */
+  height: auto; /*  Maintains aspect ratio */
+  aspect-ratio: 2 / 1; /* Consistent 2:1 ratio */
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.personal-coaching-img-small {
+  max-width: 375px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375 / 230; /*  Prevents layout shift */
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/* COACHES */
+.coaches {
+  background-color: var(--bg-dark-2);
+  padding-block: 50px;
+}
+.coaches h3 {
+  margin-bottom: 30px;
+}
+/* общий ряд: слева градиент, справа список */
+.coaches-row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch; /* важно: растягиваем обе колонки одинаково */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gradient-card {
+  background-image: url("../img/gradient.png");
+  width: 376px;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+
+  padding: 120px 30px 30px; /* same as padding-inline: 30px;
+                                padding-top: 60px;
+                                padding-bottom: 30px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /*фиксирует размер кнопки*/
+  flex: 0 0 376px; /* фиксируем ширину в flex-строке, 0 (grow) — не растягивайся, 
+0 (shrink) — не сжимайся
+376px (basis) — базовая ширина*/
+}
+.gradient-card h4 {
+  line-height: 120%;
+  text-align: center;
+}
+
+/* RIGHT cards list */
+.coach-cards-list {
+  display: flex;
+  gap: 24px;
+  flex: 1; /* занимает всё оставшееся место */
+  align-items: stretch;
+}
+.coach-card {
+  flex: 1; /*Каждая карточка получает одинаковую ширину*/
+  min-width: 0; /* чтобы текст не раздвигал карточку
+  Во flex-элементах по умолчанию min-width:auto, и длинный текст может раздвигать карточку шире, чем нужно.
+  min-width:0 разрешает карточке сжиматься и не ломать сетку. */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.coach-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* квадрат */
+  object-fit: cover;
+  border-radius: 20px;
+  display: block; /*block превращает картинку в блочный элемент:
+  -она занимает свою строку
+  -baseline больше не участвует
+  -исчезает лишняя щель снизу
+  -проще контролировать размеры и отступы*/
+}
+.coach-specialization {
+  color: var(--text-grey-1);
+}
+
+/* tags */
+.coach-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag {
+  font-size: 18px;
+  padding: 8px 10px;
+  color: var(--text-grey-1);
+  border: 1px solid var(--text-grey-1);
+  border-radius: 10px;
+  line-height: 1;
+}
+
+/* PRICE CARDS */
+
+.pricing {
+  padding-block: 120px;
+}
+.pricing h3 {
+  margin-bottom: 30px;
+}
+.price-cards-list {
+  display: flex;
+  gap: 34px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+/* usual cards + other content in accent card*/
+.price-card {
+  padding: 40px 40px 30px;
+  background-color: var(--bg-dark-2);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  flex: 1;
+  box-shadow: var(--border-shadow);
+}
+.price-card--accent {
+  background: var(--bg-dark-3);
+}
+
+.tariff-name {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 28px;
+  color: var(--button-brand-blue);
+}
+.tariff-name--accent {
+  color: var(--text-brand-blue);
+}
+.tariff-name--accent ul li:last-child {
+  color: var(--text-brand-blue);
+}
+.tariff-details {
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.price-details {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+}
+.payment-period {
+  line-height: 180%;
+  color: var(--text-white-2);
+}
+.tariff-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+.tariff-features-list li {
+  /*отступ между иконкой и текстом*/
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+.feature-icon {
+  margin-top: 1px;
+}
+.tariff-features-list li.is-disabled {
+  color: var(--text-grey-2); /* “затемнение” строки c крестиком*/
+}
+.is-bonus {
+  color: var(--text-brand-blue);
+}
+.tariff-features p {
+  flex-wrap: wrap;
+}
+.pay-button {
+  margin-top: auto;
+  background-color: transparent;
+  border: 1px solid var(--text-white-1);
+}
+.pay-button--solid {
+  background-color: var(--text-brand-blue);
+  border: none;
+}
+
+/*FOOTER PREVIEW*/
+.footer-preview {
+  background-image: url("../img/footer-cover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer-preview-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-focus-text {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+.f-text {
+  display: flex;
+  align-items: center;
+}
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /*  прижимаем вниз */
+
+  text-align: right;
+  flex: 1;
+  padding-bottom: 100px; /* отступ от низа как в макете */
+}
+.group-text {
+  display: flex;
+  flex-direction: column;
+}
+/*FOOTER*/
+footer {
+  background-image: url("../img/footer1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.full-logo-and-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/*иконки соц-сетей*/
+.social-media {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.footer-column-list ul {
+  list-style: none;
+}
+
+.footer-column-list li {
+  margin-bottom: 12px;
+}
+
+.footer-column-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.copyright {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.line-divider {
+  width: 100%;
+  border-bottom: 1px solid var(--text-brand-blue);
+  margin-bottom: 16px;
+}
