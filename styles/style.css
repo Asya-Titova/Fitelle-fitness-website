@@ -74,8 +74,11 @@ button {
   font: inherit;
   cursor: pointer;
   transform: translateZ(0) scale(1);
-  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), color 0.2s,
-    background-color 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.2s,
+    background-color 0.2s,
+    border-color 0.2s;
 
   touch-action: manipulation; /* убирает 200ms задержку на iOS/Android
 предотвращает случайные жесты типа увеличения или перемещения страницы */
@@ -224,7 +227,9 @@ button:active {
   text-decoration: none;
   cursor: pointer;
 
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .cta-btn {
