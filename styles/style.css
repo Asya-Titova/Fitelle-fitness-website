@@ -21,7 +21,8 @@ input {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Raleway", serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -47,6 +48,10 @@ h3 {
 }
 h4 {
   font-size: 28px;
+}
+h5 {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 p {
@@ -131,7 +136,7 @@ button:active {
 
 /* LANDING */
 .landing-page {
-  background-image: url("../img/main-page-cover.png");
+  background-image: url("../img/cover-main-page-img.png");
   min-height: 90vh;
   background-size: cover;
   background-position: center;
@@ -719,6 +724,59 @@ button:active {
 .group-text {
   display: flex;
   flex-direction: column;
+}
+
+/* FAQ */
+.faq {
+  background-image: url("../img/faq-bg-img.png");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  margin-bottom: 120px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--text-grey-1);
+  padding-bottom: 24px;
+  max-width: 792px;
+  cursor: pointer;
+}
+.faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.answer {
+  color: var(--text-white-2);
+}
+.answer-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 8px;
+  margin-top: 14px;
+}
+.answer-list li {
+  display: flex;
+  gap: 12px;
+}
+.li-dash {
+  color: var(--button-brand-blue);
 }
 /*FOOTER*/
 footer {
