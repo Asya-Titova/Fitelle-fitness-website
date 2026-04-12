@@ -727,27 +727,47 @@ button:active {
 }
 
 /* FAQ */
-.faq {
-  background-image: url("../img/faq-bg-img.png");
+.faq::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  aspect-ratio: 2 / 1;
 
+  background-image: url("../img/faq-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq > * {
+  position: relative;
+  z-index: 1;
+}
+
+.faq {
+  /* background-image: url("../img/faq-bg-img.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right center;
+  background-position: right center; */
   margin-bottom: 120px;
+  position: relative;
+  isolation: isolate;
 
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 120px;
 }
 
 .faq-accordion {
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 .faq-item {
   border-bottom: 1px solid var(--text-grey-1);
-  padding-bottom: 24px;
+  padding: 24px 0;
   max-width: 792px;
   cursor: pointer;
 }
@@ -759,11 +779,32 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
 }
 .answer {
+  max-height: 0;
+  overflow: hidden;
   color: var(--text-white-2);
+  transition:
+    max-height 0.4s ease,
+    padding-top 0.4s ease;
 }
+.faq-item.active .answer {
+  margin-top: 16px;
+}
+.faq-item.active .question svg {
+  transform: rotate(180deg);
+}
+.question svg {
+  transition: transform 0.3s ease;
+}
+/* Old */
+/* .answer {
+  /*padding-top: 16px; при сворачивании оставляет сверху отступ, который не пропадает при скрывании контента 
+  margin-top: 16px;
+  color: var(--text-white-2);
+  overflow: hidden;
+  max-height: 0;
+} */
 .answer-list {
   display: flex;
   flex-direction: column;
